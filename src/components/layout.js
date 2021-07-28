@@ -5,10 +5,11 @@ import GlobalStyle from './globalStyle'
 
 const BorderContainer = styled.section`
   padding: 1rem;
-  background-color: #ededed;
+  background-color: var(--outer-border-color);
   width: 100%;
   height: 100%;
   section {
+    background: var(--main-bg-color);
     min-height: 100vh;
     border-radius: 15px;
     border: none;

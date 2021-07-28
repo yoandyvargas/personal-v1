@@ -32,7 +32,6 @@ const Button = styled.a`
   border-radius: 10px;
   padding: 0.25rem 0.5rem;
   width: 50px;
-  text-transform: uppercase;
   font-weight: bold;
   &:hover {
     background-color: white;
@@ -50,7 +49,6 @@ const Nav = styled.nav`
       margin-right: 0.5rem;
       a {
         text-decoration: none;
-        color: black;
         font-size: 1.125rem;
       }
     }
