@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from '../components/layout'
+import Hero from '../components/hero'
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>Hi there</h1>
+      <Hero />
     </Layout>
   )
 }

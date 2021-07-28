@@ -3,25 +3,26 @@ import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const StyledHeader = styled.header`
+  max-width: 950px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: black;
   padding: 2rem;
 `
 
 const LogoImg = styled.div`
   display: flex;
   align-items: center;
-  h1 {
-    color: white;
+  justify-content: flex-start;
+  p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-left: 0.5rem;
   }
   img {
-    curser: pointer;
+    cursor: pointer;
     border-radius: 50%;
   }
 `
@@ -49,7 +50,7 @@ const Nav = styled.nav`
       margin-right: 0.5rem;
       a {
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 1.125rem;
       }
     }
@@ -72,7 +73,7 @@ const Header = () => {
           src="../images/portrait.jpeg"
           alt="Portrait photo of me" 
         />
-        <h1>Yoandy Vargas</h1>
+        <p>YV</p>
       </LogoImg>
       <Nav>
         <ul>
