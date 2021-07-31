@@ -28,7 +28,7 @@ const LogoImg = styled.div`
 `
 
 const Button = styled.a`
-  border: solid 2px white;
+  border: solid 2px var(--main-text-color);
   border-radius: 10px;
   padding: 0.25rem 0.5rem;
   width: 50px;
@@ -71,13 +71,11 @@ const Header = () => {
           src="../images/portrait.jpeg"
           alt="Portrait photo of me" 
         />
-        <p>YV</p>
       </LogoImg>
       <Nav>
         <ul>
           <li><a href='#'>home</a></li>
           <li><a href='#'>about</a></li>
-          <li><Button href='#'>Contact</Button></li>
         </ul>
       </Nav>
     </StyledHeader>
