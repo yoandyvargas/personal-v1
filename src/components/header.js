@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -50,12 +50,30 @@ const Nav = styled.nav`
       a {
         text-decoration: none;
         font-size: 1.125rem;
+        font-weight: 600;
+        position: relative;
+      }
+      &:hover::after {
+        display: block;
+        content: '';
+        position: absolute;
+        background: var(--accent-color);
+        height: 3px;
+        animation: left-to-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
       }
     }
     li:nth-child(3) {
       margin-right: 0;
     }
   }
+@keyframes left-to-right {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50px;
+  }
+}
 `
 
 const Header = () => {
@@ -74,8 +92,8 @@ const Header = () => {
       </LogoImg>
       <Nav>
         <ul>
-          <li><a href='#'>home</a></li>
-          <li><a href='#'>about</a></li>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>About</a></li>
         </ul>
       </Nav>
     </StyledHeader>
