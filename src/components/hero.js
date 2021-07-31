@@ -40,7 +40,7 @@ const HeroButton = styled.a`
   font-weight: 600;
   min-width: 105px;
   background: rgba(25,25,25,0.90);
-  transition: background 0.25s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: background 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   text-decoration: none;
   &:hover {
     background: var(--accent-color);
@@ -53,7 +53,7 @@ const HeroButton = styled.a`
     height: 16px;
     margin-right: 0.25rem;
     fill: var(--accent-color);
-    transition: fill 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: fill 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 `
 

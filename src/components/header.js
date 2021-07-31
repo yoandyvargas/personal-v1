@@ -52,14 +52,14 @@ const Nav = styled.nav`
         font-size: 1.125rem;
         font-weight: 600;
         position: relative;
-      }
-      &:hover::after {
+        &:hover::after {
         display: block;
         content: '';
         position: absolute;
         background: var(--accent-color);
         height: 3px;
-        animation: left-to-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+        animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+      }
       }
     }
     li:nth-child(3) {
@@ -68,10 +68,10 @@ const Nav = styled.nav`
   }
 @keyframes left-to-right {
   0% {
-    width: 0px;
+    width: 0%;
   }
   100% {
-    width: 50px;
+    width: 100%;
   }
 }
 `
@@ -94,6 +94,7 @@ const Header = () => {
         <ul>
           <li><a href='#'>Home</a></li>
           <li><a href='#'>About</a></li>
+          <li><a href='#'>Experience</a></li>
         </ul>
       </Nav>
     </StyledHeader>
