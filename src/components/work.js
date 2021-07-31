@@ -42,7 +42,7 @@ const WorkInfo = styled.div`
 
 const Work = () => {
 
-  const [display, setDisplay] = useState(false);
+  const [display, setDisplay] = useState(true);
 
   return (
     <WorkHistory>

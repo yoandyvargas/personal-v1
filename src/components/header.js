@@ -47,12 +47,8 @@ const Nav = styled.nav`
     li {
       list-style: none;
       margin-right: 0.5rem;
-      a {
-        text-decoration: none;
-        font-size: 1.125rem;
-        font-weight: 600;
-        position: relative;
-        &:hover::after {
+      position: relative;
+      &:hover::after {
         display: block;
         content: '';
         position: absolute;
@@ -60,6 +56,16 @@ const Nav = styled.nav`
         height: 3px;
         animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
       }
+      span {
+        color: var(--accent-color);
+        font-weight: bold;
+        margin-right: 0.25rem;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.125rem;
+        font-weight: 600;
+        position: relative;
       }
     }
     li:nth-child(3) {
@@ -92,9 +98,9 @@ const Header = () => {
       </LogoImg>
       <Nav>
         <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Experience</a></li>
+          <li><span>01.</span><a href='#'>Home</a></li>
+          <li><span>02.</span><a href='#'>About</a></li>
+          <li><span>03.</span><a href='#'>Experience</a></li>
         </ul>
       </Nav>
     </StyledHeader>
