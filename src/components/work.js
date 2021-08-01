@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const WorkHistory = styled.div`
   max-width: 760px;
@@ -21,7 +22,7 @@ const WorkInfo = styled.div`
 
   }
   h4 {
-    margin-bottom: 1rem;
+    margin: 0.5rem 0 1rem 0;
     font-weight: normal;
   }
   ul {
@@ -44,38 +45,39 @@ const Work = () => {
 
   const [display, setDisplay] = useState(true);
 
+  const work = useStaticQuery(graphql`
+  query {
+    allMdx {
+      nodes {
+        frontmatter {
+          title
+          responsibilites
+          range
+          company
+        }
+        id
+      }
+    }
+  }
+  
+  
+`)
+
+console.log(work)
+
   return (
     <WorkHistory>
-      <h2 onClick={() => {
-        if(display === true ){
-          setDisplay(false) 
-        } else {
-        setDisplay(true)
+      <h2>Where I've Worked</h2>
+        {
+        work.allMdx.nodes.map((node) => (
+          <WorkInfo key={node.id}>
+            <h3>{node.frontmatter.title} <span> @ {node.frontmatter.company}</span></h3>
+            <h4>{node.frontmatter.range}</h4>
+            <ul>
+            </ul>
+          </WorkInfo>
+        ))
         }
-        }}>Where I've Worked</h2>
-      {display === true && 
-        <WorkInfo>
-          <h3>Web Designer & Developer Career Experience<span> @ Apple</span></h3>
-          <h4>Jan - Jul 2021</h4>
-          <ul>
-            <li>Developed modern HTML email templates for an internal email client using Kit, Stylus, Gulp, and Node.</li>
-            <li>Researched and synthesized UX data to identify personas, discover use cases, and capture feedback.</li>
-            <li>Designed, wireframed, and prototyped the UI and other visual elements with Adobe Creative Suite.</li>
-            <li>Collaborated with multi-disciplinary teams to support development for company and organization initiatives.</li>
-          </ul>
-        </WorkInfo>
-      }
-      {display === true && 
-        <WorkInfo>
-          <h3>Front-End Developer Internship<span> @ Callahan Genealogy (UCF) </span></h3>
-          <h4>Feb 2020 - Jan 2021</h4>
-          <ul>
-            <li>Developed an interactive, engaging, and self-sufficient website using HTML, CSS, JavaScript, and WordPress.</li>
-            <li>Implemented a custom WordPress theme that enabled flexibility and reduced support requirements.</li>
-            <li>Researched UX data to determine the best information architecture for 200+ unique and historic photographic stories.</li>
-          </ul>
-        </WorkInfo>
-      }
     </WorkHistory>
   )
 }
