@@ -6,7 +6,7 @@ import Work from '../components/work'
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout id='home'>
       <Hero />
       <About />
       <Work />

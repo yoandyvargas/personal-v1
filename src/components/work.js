@@ -62,7 +62,7 @@ const Work = () => {
 `)
 
   return (
-    <WorkHistory>
+    <WorkHistory id="experience">
       <h2>Where I've Worked</h2>
         {
         work.allMdx.nodes.map((node) => (

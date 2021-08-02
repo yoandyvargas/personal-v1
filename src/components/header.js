@@ -27,17 +27,6 @@ const LogoImg = styled.div`
   }
 `
 
-const Button = styled.a`
-  border: solid 2px var(--main-text-color);
-  border-radius: 10px;
-  padding: 0.25rem 0.5rem;
-  width: 50px;
-  font-weight: bold;
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-`
 const Nav = styled.nav`
   display: flex;
   flex-direction: row;
@@ -100,9 +89,9 @@ const Header = () => {
       </LogoImg>
       <Nav>
         <ul>
-          <li><span>01.</span><a href='#'>Home</a></li>
-          <li><span>02.</span><a href='#'>About</a></li>
-          <li><span>03.</span><a href='#'>Experience</a></li>
+          <li><span>01.</span><a href='#home'>Home</a></li>
+          <li><span>02.</span><a href='#about'>About</a></li>
+          <li><span>03.</span><a href='#work'>Experience</a></li>
         </ul>
       </Nav>
     </StyledHeader>
