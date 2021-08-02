@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -43,8 +43,6 @@ const WorkInfo = styled.div`
 
 const Work = () => {
 
-  const [display, setDisplay] = useState(true);
-
   const work = useStaticQuery(graphql`
   query {
     allMdx {
@@ -74,6 +72,9 @@ console.log(work)
             <h3>{node.frontmatter.title} <span> @ {node.frontmatter.company}</span></h3>
             <h4>{node.frontmatter.range}</h4>
             <ul>
+              {node.frontmatter.responsibilites.map((res) => (
+                <li>{res}</li>
+              ))}
             </ul>
           </WorkInfo>
         ))
