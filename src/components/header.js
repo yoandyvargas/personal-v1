@@ -72,6 +72,7 @@ const Nav = styled.nav`
       margin-right: 0;
     }
   }
+  
 @keyframes left-to-right {
   0% {
     width: 0%;
@@ -83,6 +84,7 @@ const Nav = styled.nav`
 `
 
 const Header = () => {
+
   return (
     <StyledHeader>
       <LogoImg>

@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const WorkHistory = styled.div`
   max-width: 760px;
-  padding: 0 2rem;
+  padding: 0 2rem 4rem 2rem;
   margin: 0 auto;
   h2 {
     font-size: 2rem;
@@ -61,8 +61,6 @@ const Work = () => {
   
 `)
 
-console.log(work)
-
   return (
     <WorkHistory>
       <h2>Where I've Worked</h2>
@@ -73,7 +71,7 @@ console.log(work)
             <h4>{node.frontmatter.range}</h4>
             <ul>
               {node.frontmatter.responsibilites.map((res) => (
-                <li>{res}</li>
+                <li key={res}>{res}</li>
               ))}
             </ul>
           </WorkInfo>
