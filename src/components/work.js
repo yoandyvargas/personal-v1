@@ -45,13 +45,14 @@ const Work = () => {
 
   const work = useStaticQuery(graphql`
   query {
-    allMdx {
+    allMdx (sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         frontmatter {
           title
           responsibilites
           range
           company
+          date
         }
         id
       }
