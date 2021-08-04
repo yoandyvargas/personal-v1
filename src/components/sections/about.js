@@ -32,10 +32,6 @@ const About = () => {
       I have always gravitated towards tinkering ever since I got my first PC in 1998, but it wasn't until 2017 while working at Apple that I would discover my passion for programming. 
       One day at work, I participated in a Today @ Apple coding session – and I never looked back. 
       </p>
-      <br/>
-      <p>
-      In December 2020, I became the first university graduate in my family. In January 2021, I went on a six-month career experience with Apple as a Web Designer and Developer. It's been a great ride so far! 👨🏻‍💻
-      </p>
     </AboutContainer>
   )
 }
