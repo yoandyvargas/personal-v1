@@ -31,6 +31,15 @@ const StyledHero = styled.div`
   p {
     line-height: 1.5;
   }
+  span {
+    color: var(--accent-color);
+  }
+  @media screen and (max-width: 642px) {
+    padding: 1.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
 `
 
 const ButtonList = styled.div`
@@ -42,6 +51,9 @@ const ButtonList = styled.div`
   a:nth-:nth-child(3) {
     margin-right: 0rem;
   }
+  @media screen and (max-width: 642px) {
+    flex-wrap: wrap;
+  }
 `
 
 const Hero = () => {
@@ -49,7 +61,7 @@ const Hero = () => {
   return (
     <StyledHero>
       <h2>Hello, I'm Yoandy Vargas</h2>
-      <h1>I bring ideas to life. 💡</h1>
+      <h1>I bring <span>ideas</span> to life. 💡</h1>
       <h3>I'm a creative Front-End Developer with a passion for building and delivering exceptional 
           digital experiences that are interactive, intuitive, and problem-solving.
       </h3>

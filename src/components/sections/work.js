@@ -10,6 +10,9 @@ const WorkHistory = styled.div`
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+  @media screen and (max-width: 642px) {
+    padding: 1.5rem;
+  }
 `
 
 const WorkInfo = styled.div`

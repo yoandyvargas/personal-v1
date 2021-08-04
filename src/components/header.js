@@ -10,20 +10,13 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   width: 100%;
   padding: 2rem;
-`
-
-const LogoImg = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-left: 0.5rem;
-  }
   img {
     cursor: pointer;
     border-radius: 50%;
+    border: solid 0.5px var(--accent-color);
+  }
+  @media screen and (max-width: 642px) {
+    padding: 1.5rem;
   }
 `
 
@@ -76,7 +69,6 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <LogoImg>
         <StaticImage 
           href="/"
           width={50}
@@ -86,11 +78,10 @@ const Header = () => {
           src="../images/portrait.jpeg"
           alt="Portrait photo of me" 
         />
-      </LogoImg>
       <Nav>
         <ul>
-          <li><span>01.</span><a href='#home'>Home</a></li>
-          <li><span>02.</span><a href='#about'>About</a></li>
+          <li><span>01.</span><a href='/'>Home</a></li>
+          <li><span>02.</span><a href='/about'>About</a></li>
           <li><span>03.</span><a href='#work'>Experience</a></li>
         </ul>
       </Nav>

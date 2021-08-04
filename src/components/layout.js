@@ -1,16 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from './header'
+import Footer from './footer'
 import GlobalStyle from './globalStyle'
 
 const BorderContainer = styled.section`
   padding: 1rem;
   background-color: var(--outer-border-color);
-  //width: 100%;
-  //height: 100%;
+  @media screen and (max-width: 642px) {
+    padding: 0.5rem;
+  }
   section {
     background: var(--main-bg-color);
-    //min-height: 100vh;
     border-radius: 15px;
     border: none;
     margin: 0 auto;
@@ -24,6 +25,7 @@ const Layout = ({children}) => {
         <GlobalStyle />
         <Header />
         {children}
+        <Footer />
       </section>
     </BorderContainer>
   )
