@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
 
 const ProjectsContainer = styled.section`
   display: grid;
@@ -114,7 +113,6 @@ return (
     <h2>Recent Projects</h2>
     {projects.allMdx.nodes.map((node) => (
       <ProjectCard key={node.id} onClick={() => {window.open(node.frontmatter.production, '__blank', 'noopener')}}>
-        <GatsbyImage image={node.frontmatter.example}/>
         <ProjectInfo>
         <h3>{node.frontmatter.name}</h3>
           <div>
