@@ -17,7 +17,9 @@ const ProjectsContainer = styled.section`
   }
   @media screen and (max-width: 642px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 10px;
+    padding: 1.5rem;
     h2 {
     grid-column: 1;
   }
@@ -39,9 +41,10 @@ const ProjectCard = styled.div`
   }
   .tech {
     display: flex;
+    flex-wrap: wrap;
     p {
       margin-right: 0.25rem;
-      opacity: 0.5;
+      opacity: 0.7;
       font-weight: 400;
     }
   }
@@ -50,10 +53,10 @@ const ProjectCard = styled.div`
   }
 `
 
-
 const ProjectInfo = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   padding-bottom: 0.5rem;
@@ -67,10 +70,14 @@ const ProjectInfo = styled.div`
     height: 2px;
     bottom: 0;
   }
+  a svg {
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
   a:first-child {
     svg {
     fill: var(--accent-color);
     margin-right: 0.5rem;
+    width: 22px;
     &:hover {
       fill: var(--main-text-color);
     }

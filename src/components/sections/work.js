@@ -40,6 +40,10 @@ const WorkInfo = styled.div`
       border: solid 1px var(--accent-color);
       border-radius: 50%;
       margin-right: 0.5rem;
+      @media screen and (max-width: 642px) {
+        width: 7px;
+        height: 7px;
+      }
     }
   }
 `

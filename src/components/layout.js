@@ -5,7 +5,7 @@ import Footer from './footer'
 import GlobalStyle from './globalStyle'
 
 const BorderContainer = styled.section`
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--outer-border-color);
   @media screen and (max-width: 642px) {
     padding: 0.5rem;

@@ -13,9 +13,11 @@ const ContactContainer = styled.div`
     font-size: 3.5rem;
     margin-bottom: 1rem;
   }
+
   div {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     a {
       margin-right: 1rem;
     }
@@ -31,6 +33,17 @@ const ContactContainer = styled.div`
       }
     }
   }
+  @media screen and (max-width: 642px) {
+    padding: 0 1.5rem;
+    justify-content: center;
+    div  {
+      flex-wrap: wrap;
+      a {
+        margin: 2px;
+      }
+    }
+}
+
 `
 
 
