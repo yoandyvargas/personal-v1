@@ -48,7 +48,7 @@ const Work = () => {
 
   const work = useStaticQuery(graphql`
   query {
-    allMdx (sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx (sort: { fields: [frontmatter___date], order: DESC }, filter: {frontmatter: {type: {eq: "work"}}}) {
       nodes {
         frontmatter {
           title
