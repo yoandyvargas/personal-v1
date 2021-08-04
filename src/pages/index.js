@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Hero from '../components/sections/hero'
 import About from '../components/about'
-import Work from '../components/work'
+import Work from '../components/sections/work'
 
 const IndexPage = () => {
   return (
