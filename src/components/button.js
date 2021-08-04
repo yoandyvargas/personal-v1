@@ -30,9 +30,9 @@ svg {
 }
 `
 
-const Button = ({children}) => {
+const Button = ({children, href}) => {
   return (
-    <StyledButton>
+    <StyledButton href={href} target="_blank" rel="noopener noreferrer">
       {children}
     </StyledButton>
   )

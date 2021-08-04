@@ -82,7 +82,6 @@ const Header = () => {
         <ul>
           <li><span>01.</span><a href='/'>Home</a></li>
           <li><span>02.</span><a href='/about'>About</a></li>
-          <li><span>03.</span><a href='#work'>Experience</a></li>
         </ul>
       </Nav>
     </StyledHeader>
