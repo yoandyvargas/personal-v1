@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const StyledButton = styled.a`
   display: flex;
-  place-items: center;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   border-radius: 8px;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   font-weight: 600;
   min-width: 105px;
   text-decoration: none;
