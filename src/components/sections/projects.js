@@ -34,9 +34,6 @@ const ProjectCard = styled.div`
   &:hover {
     border: solid 1px var(--accent-color);
     border-radius: 15px;
-    img {
-      filter: grayscale(0);
-    }
   }
   p {
     line-height: 1.5;
@@ -63,15 +60,6 @@ const ProjectInfo = styled.div`
   align-items: center;
   position: relative;
   padding-bottom: 0.5rem;
-  img {
-    width: 100%;
-    object-fit: cover;
-    //object-position: 50% 50%;
-    filter: grayscale(0.75);
-    //width: 250px;
-    height: 250px;
-    margin: 0 auto;
-  }
   &::after {
     display: block;
     position: absolute;
@@ -133,7 +121,6 @@ return (
     {projects.allMdx.nodes.map((node) => (
       <ProjectCard key={node.id} onClick={() => {window.open(node.frontmatter.production, '__blank', 'noopener')}}>
         <ProjectInfo>
-          <img src={node.frontmatter.example} />
           <h3>{node.frontmatter.name}</h3>
             <div>
               <a href={node.frontmatter.github} target="_blank" rel="noopener noreferrer">

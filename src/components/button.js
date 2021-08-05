@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const StyledButton = styled.a`
   display: flex;
   place-items: center;
+  justify-content: center;
   cursor: pointer;
   border-radius: 8px;
   margin-top: 1rem;

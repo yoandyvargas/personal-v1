@@ -46,10 +46,10 @@ const ButtonList = styled.div`
   display: flex;
   flex-direction: row;
   a {
-    margin-right: 0.75rem;
+    //margin-right: 0.75rem;
   }
   a:nth-:nth-child(3) {
-    margin-right: 0rem;
+    //margin-right: 0rem;
   }
   @media screen and (max-width: 642px) {
     flex-wrap: wrap;

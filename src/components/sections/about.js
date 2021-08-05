@@ -30,7 +30,7 @@ const AboutContainer = styled.div`
 const About = () => {
   return (
     <AboutContainer id="about">
-      <h1>My Story</h1>
+      <h1>My Story </h1>
       <p>
       <strong>Hello!</strong> My name is Yoandy (YO-AHN-DEE), and I love the coming together of all things design and technology. 
       I have always gravitated towards tinkering ever since I got my first PC in 1998, but it wasn't until 2017 while working at Apple that I would discover my passion for programming. 
