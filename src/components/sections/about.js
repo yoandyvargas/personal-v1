@@ -4,7 +4,8 @@ import styled from 'styled-components'
 const AboutContainer = styled.div`
   max-width: 760px;
   padding: 0 2rem;
-  margin: 0 auto 4rem auto;
+  margin: 4rem auto;
+  min-height: 100vh;
   h1 {
     font-size: 4rem;
     margin-bottom: 1rem;

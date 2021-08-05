@@ -41,7 +41,6 @@ const ContactContainer = styled.div`
 }
 `
 
-
 const Contact = () => {
 
   const data = useStaticQuery(graphql`
@@ -55,8 +54,6 @@ const Contact = () => {
     }
   }
 `)
-
-console.log(data);
 
   return (
     <ContactContainer>

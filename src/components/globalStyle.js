@@ -30,8 +30,11 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 642px) {
       font-size: 14px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
     }
   }
   body {
