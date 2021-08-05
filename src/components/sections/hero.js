@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Button from '../button'
 
-const StyledHero = styled.div`
+const HeroContainer = styled.section`
   max-width: 760px;
   padding: 4rem 2rem;
   margin: 0 auto;
@@ -46,10 +46,10 @@ const ButtonList = styled.div`
   display: flex;
   flex-direction: row;
   a {
-    //margin-right: 0.75rem;
+    margin-right: 1rem;
   }
   a:nth-:nth-child(3) {
-    //margin-right: 0rem;
+    margin-right: 0rem;
   }
   @media screen and (max-width: 642px) {
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ const ButtonList = styled.div`
 const Hero = () => {
 
   return (
-    <StyledHero>
+    <HeroContainer>
       <h2>Hello, I'm Yoandy Vargas</h2>
       <h1>I bring <span>ideas</span> to life. 💡</h1>
       <h3>I'm a creative Front-End Developer with a passion for building and delivering exceptional 
@@ -81,7 +81,7 @@ const Hero = () => {
           <p>Email</p>
         </Button>
       </ButtonList>
-    </StyledHero>
+    </HeroContainer>
   )
 }
 
