@@ -53,6 +53,9 @@ const ButtonList = styled.div`
   }
   @media screen and (max-width: 642px) {
     flex-wrap: wrap;
+    a {
+      margin-right: 0.25rem;
+    }
   }
 `
 
