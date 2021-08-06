@@ -8,8 +8,11 @@ const AboutContainer = styled.div`
   margin: 2rem auto;
   min-height: 100vh;
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: 642px) {
+      font-size: 3rem;
+    }
     &::after {
       display: block;
       content: '';
@@ -44,17 +47,23 @@ const AboutContainer = styled.div`
           border: solid 1px var(--accent-color);
           border-radius: 50%;
           margin-right: 0.5rem;
-          @media screen and (max-width: 642px) {
+        } 
+        @media screen and (max-width: 642px) {
+            font-size: 1.125rem;
+            &::before {
             width: 10px;
             height: 10px;
+            }
           }
-        } 
       }
     }
-    p {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-  }
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 642px) {
+          font-size: 1.125rem;
+        }
+      }
 }
   @media screen and (max-width: 642px) {
     padding: 0 1.5rem;
