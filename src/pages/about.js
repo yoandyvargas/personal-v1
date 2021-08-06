@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../components/layout'
 import About from '../components/sections/about'
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
       <About />
@@ -10,4 +10,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default AboutPage;

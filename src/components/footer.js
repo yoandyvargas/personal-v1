@@ -52,7 +52,7 @@ return (
   <StyledFooter>
     <FooterItem>
       <p>Legal</p>
-      <p>Privacy Policy</p>
+      <a href="/privacy">Privacy Policy</a>
     </FooterItem>
     <FooterItem>
       <p>Contact</p>
