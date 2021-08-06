@@ -7,11 +7,10 @@ const PrivacyContainer = styled.div`
   margin: 2rem auto;
   min-height: 100vh;
   h1 {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 5rem;
   }
   h2 {
-    text-align: center;
+    font-size: 2rem;
     margin-bottom: 1rem;
     &::after {
       display: block;
@@ -43,6 +42,9 @@ const PrivacyContainer = styled.div`
     margin: 0 auto;
     h1 {
       font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
     }
   }
 `

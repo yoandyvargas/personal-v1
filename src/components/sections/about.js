@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '../button'
 
 const AboutContainer = styled.div`
   max-width: 960px;
@@ -7,9 +8,8 @@ const AboutContainer = styled.div`
   margin: 2rem auto;
   min-height: 100vh;
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 1rem;
-    text-align: center;
     &::after {
       display: block;
       content: '';
@@ -20,24 +20,64 @@ const AboutContainer = styled.div`
       margin-top: 1rem;
     }
   }
+  span {
+    color: var(--accent-color);
+  }
   p {
     line-height: 1.5;
   }
+  .about__intro {
+    margin-bottom: 4rem;
+    ul {
+      display: grid;
+      grid-template: auto auto / auto auto auto;
+      grid-row-gap: 1rem;
+      padding: 0;
+      li {
+        list-style: none;
+        font-size: 1.25rem;
+        &::before {
+          display: inline-block;
+          content: '';
+          width: 12px;
+          height: 12px;
+          border: solid 1px var(--accent-color);
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          @media screen and (max-width: 642px) {
+            width: 10px;
+            height: 10px;
+          }
+        } 
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+  }
+}
   @media screen and (max-width: 642px) {
     padding: 0 1.5rem;
     margin: 0 auto;
   }
 `
-
 const About = () => {
   return (
     <AboutContainer>
-      <h1>My Story </h1>
-      <p>
-      <strong>Hello!</strong> My name is Yoandy (YO-AHN-DEE), and I love the coming together of all things design and technology. 
-      I have always gravitated towards tinkering ever since I got my first PC in 1998, but it wasn't until 2017 while working at Apple that I would discover my passion for programming. 
-      One day at work, I participated in a Today @ Apple coding educational session – and I <strong>never</strong> looked back. 
-      </p>
+      <h1>Hello</h1>
+        <div className="about__intro">
+          <p>I'm Yoandy <span>(YO-AHN-DEE)</span> Vargas, a front-end web developer with an eye for design based in Orlando, FL. I have been creating on the web for the last 4 years.</p>
+          <p>I graduated with a Bachelor of Arts in Digital Media from the University of Central Florida – where I could focus on my passion for design and technology by studying design principles, human-computer interaction, user experience research, and web-focused software engineering.</p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Gatsby</li>
+            <li>GraphQL</li>
+            <li>Stylus</li>
+            <li>Sass</li>
+          </ul>
+        </div>
     </AboutContainer>
   )
 }
