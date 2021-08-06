@@ -7,7 +7,7 @@ const ProjectsContainer = styled.section`
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1rem;
-  max-width: 760px;
+  max-width: 960px;
   padding: 0 2rem 4rem 2rem;
   margin: 0 auto;
   h2 {
@@ -119,7 +119,7 @@ return (
   <ProjectsContainer>
     <h2>Recent Projects</h2>
     {projects.allMdx.nodes.map((node) => (
-      <ProjectCard key={node.id} onClick={() => {window.open(node.frontmatter.production, '__blank', 'noopener')}}>
+      <ProjectCard key={node.id}>
         <ProjectInfo>
           <h3>{node.frontmatter.name}</h3>
             <div>

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutContainer = styled.div`
-  max-width: 760px;
+  max-width: 960px;
   padding: 0 2rem;
   margin: 2rem auto;
   min-height: 100vh;
@@ -31,7 +31,7 @@ const AboutContainer = styled.div`
 
 const About = () => {
   return (
-    <AboutContainer id="about">
+    <AboutContainer>
       <h1>My Story </h1>
       <p>
       <strong>Hello!</strong> My name is Yoandy (YO-AHN-DEE), and I love the coming together of all things design and technology. 

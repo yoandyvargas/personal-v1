@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const StyledHeader = styled.header`
-  max-width: 950px;
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -13,7 +13,11 @@ const StyledHeader = styled.header`
   img {
     cursor: pointer;
     border-radius: 50%;
-    border: solid 0.5px var(--accent-color);
+    border: solid 0.5px var(--outer-border-color);
+    filter: opacity(0.9);
+    &:hover {
+      filter: opacity(1);
+    }
   }
   @media screen and (max-width: 642px) {
     padding: 1.5rem;
@@ -69,15 +73,16 @@ const Header = () => {
 
   return (
     <StyledHeader>
+      <a href="/">
         <StaticImage 
-          href="/"
           width={50}
           height={50}
-          placeholder='tracedSVG'
+          placeholder='blurred'
           objectPosition='center top'
           src="../images/portrait.jpeg"
           alt="Portrait photo of me" 
         />
+      </a>
       <Nav>
         <ul>
           <li><span>01.</span><a href='/'>Home</a></li>

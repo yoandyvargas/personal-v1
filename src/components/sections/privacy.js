@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const PrivacyContainer = styled.div`
-  max-width: 760px;
+  max-width: 960px;
   padding: 0 2rem;
   margin: 2rem auto;
   min-height: 100vh;

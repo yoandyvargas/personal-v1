@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const WorkHistory = styled.div`
-  max-width: 760px;
+const WorkContainer = styled.div`
+  max-width: 960px;
   padding: 0 2rem 4rem 2rem;
   margin: 0 auto;
   h2 {
@@ -70,7 +70,7 @@ const Work = () => {
 `)
 
   return (
-    <WorkHistory id="experience">
+    <WorkContainer>
       <h2>Where I've Worked</h2>
         {
         work.allMdx.nodes.map((node) => (
@@ -85,7 +85,7 @@ const Work = () => {
           </WorkInfo>
         ))
         }
-    </WorkHistory>
+    </WorkContainer>
   )
 }
 

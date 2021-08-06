@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
-  max-width: 760px;
+  max-width: 960px;
   padding: 4rem 2rem;
   margin: 0 auto;
   display: flex;

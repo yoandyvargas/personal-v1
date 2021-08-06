@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Button from '../button'
 
 const HeroContainer = styled.section`
-  max-width: 760px;
+  max-width: 960px;
   padding: 4rem 2rem;
   margin: 0 auto;
   &::after {
@@ -24,6 +24,7 @@ const HeroContainer = styled.section`
   h3 {
     font-weight: normal;
     line-height: 1.5;
+    max-width: 85%;
   }
   p {
     line-height: 1.5;
@@ -35,6 +36,9 @@ const HeroContainer = styled.section`
     padding: 1.5rem;
     h1 {
       font-size: 2.5rem;
+    }
+    h3 {
+      max-width: 100%;
     }
   }
 `
