@@ -9,6 +9,12 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `yoandyvargas.com`,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `work`,
