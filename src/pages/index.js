@@ -7,7 +7,7 @@ import Contact from '../components/sections/contact'
 
 const IndexPage = () => {
   return (
-    <Layout id='home'>
+    <Layout>
       <Hero />
       <Projects />
       <Work />

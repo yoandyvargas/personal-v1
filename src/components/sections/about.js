@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Button from '../button'
 
 const AboutContainer = styled.div`
   max-width: 960px;
@@ -38,7 +37,7 @@ const AboutContainer = styled.div`
       padding: 0;
       li {
         list-style: none;
-        font-size: 1.25rem;
+        font-size: 1rem;
         &::before {
           display: inline-block;
           content: '';
@@ -58,11 +57,8 @@ const AboutContainer = styled.div`
       }
     }
       p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
-        @media screen and (max-width: 642px) {
-          font-size: 1.125rem;
-        }
       }
 }
   @media screen and (max-width: 642px) {

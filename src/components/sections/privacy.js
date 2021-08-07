@@ -54,7 +54,7 @@ const Privacy = () => {
     <PrivacyContainer>
       <h1>Privacy Policy </h1>
       <h2>Only the necessary stuff.</h2>
-      <p>I value data privacy highly which is why I am using <a href="https://plausible.io/" target="_blank">Plausible Analytics</a> – a GDPR, CCPA, and cookie law-compliant analytics tool. 
+      <p>I value data privacy highly which is why I am using <a href="https://plausible.io/" target="_blank" rel="noopener noreferrer">Plausible Analytics</a> – a GDPR, CCPA, and cookie law-compliant analytics tool. 
         Plausible is privacy-focused and only collects crucial non-personally identifiable data that helps me to improve this website. 
       </p><br/>
       <h3>The following data is being collected:</h3><br/>
@@ -67,7 +67,7 @@ const Privacy = () => {
         <li>Visitor Country</li>
       </ul>
       <br />
-      <p>Learn more about Plausible's data policy at <a href="https://plausible.io/data-policy" target="_blank">https://plausible.io/data-policy</a>.</p>
+      <p>Learn more about Plausible's data policy at <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer">https://plausible.io/data-policy</a>.</p>
       <br/>
       <h3>Please contact <a href="mailto:yoandy.vargas@icloud.com">Yoandy Vargas</a> If you have any questions or concerns.</h3>
       <br/>

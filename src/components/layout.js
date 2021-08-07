@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import GlobalStyle from './globalStyle'
+import SEO from './seo'
 
 const BorderContainer = styled.section`
   padding: 0.5rem;
@@ -21,6 +22,7 @@ const BorderContainer = styled.section`
 const Layout = ({children}) => {
   return (
     <BorderContainer>
+      <SEO />
       <section>
         <GlobalStyle />
         <Header />

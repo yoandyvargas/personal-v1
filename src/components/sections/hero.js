@@ -6,6 +6,7 @@ const HeroContainer = styled.section`
   max-width: 960px;
   padding: 4rem 2rem;
   margin: 0 auto;
+  animation: fadeIn 1.5s, slideUp 1s;
   &::after {
     display: block;
     content: '';
@@ -56,6 +57,23 @@ const ButtonList = styled.div`
     flex-wrap: wrap;
     a {
       margin-right: 0.25rem;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(150px);
+    }
+    to {
+      transform: translateY(0px);
     }
   }
 `
