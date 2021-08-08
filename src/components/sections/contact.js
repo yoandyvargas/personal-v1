@@ -13,6 +13,7 @@ const ContactContainer = styled.div`
   h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    color: var(--accent-color);
   }
   div {
     display: flex;

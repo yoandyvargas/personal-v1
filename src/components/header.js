@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
 const StyledHeader = styled.header`
   max-width: 1080px;
@@ -20,7 +21,7 @@ const StyledHeader = styled.header`
     }
   }
   @media screen and (max-width: 642px) {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
   }
 `
 
@@ -57,6 +58,9 @@ const Nav = styled.nav`
     li:nth-child(3) {
       margin-right: 0;
     }
+    .active {
+      color: var(--accent-color);
+    }
   }
   
 @keyframes left-to-right {
@@ -73,7 +77,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <a href="/">
+      <Link to="/">
         <StaticImage 
           width={50}
           height={50}
@@ -82,11 +86,11 @@ const Header = () => {
           src="../images/portrait.jpeg"
           alt="Portrait photo of me" 
         />
-      </a>
+      </Link>
       <Nav>
         <ul>
-          <li><span>01.</span><a href='/'>Home</a></li>
-          <li><span>02.</span><a href='/about'>About</a></li>
+          <li><Link to='/' activeClassName='active'>Home</Link></li>
+          <li><Link to='/about' activeClassName='active'>About</Link></li>
         </ul>
       </Nav>
     </StyledHeader>

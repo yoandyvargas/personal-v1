@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const StyledFooter = styled.footer`
   max-width: 960px;
@@ -52,7 +53,7 @@ return (
   <StyledFooter>
     <FooterItem>
       <p>Legal</p>
-      <a href="/privacy">Privacy Policy</a>
+      <Link to="/privacy">Privacy Policy</Link>
     </FooterItem>
     <FooterItem>
       <p>Contact</p>

@@ -11,7 +11,7 @@ const WorkContainer = styled.div`
     margin-bottom: 1rem;
   }
   @media screen and (max-width: 642px) {
-    padding: 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
   }
 `
 

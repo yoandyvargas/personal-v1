@@ -7,7 +7,7 @@ import SEO from './seo'
 
 const BorderContainer = styled.section`
   padding: 0.5rem;
-  background-color: var(--outer-border-color);
+  background: var(--outer-border-color);
   @media screen and (max-width: 642px) {
     padding: 0.5rem;
   }

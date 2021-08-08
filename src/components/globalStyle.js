@@ -4,20 +4,20 @@ const GlobalStyle = createGlobalStyle`
   :root {
     color-scheme: light;
     --main-bg-color: #f7f7f7;
-    --outer-border-color: black;
-    --main-text-color: black;
+    --outer-border-color: #0F0F0F;
+    --main-text-color: #303030;
     --secondary-bg-color: #ededed;
     --secondary-text-color: white;
-    --accent-color: #1476B2;
+    --accent-color: #15529E; //#1D73DD 1476B2 1E77E2
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --main-bg-color: #121212;
-      --outer-border-color: white;
-      --main-text-color: white;
+      --outer-border-color: #FCFCFC;
+      --main-text-color: #CFCFCF;
       --secondary-bg-color: #242424;
       --secondary-text-color: black;
-      --accent-color: #1699E9;
+      --accent-color: #6BA2E6; //3CCF91 #9EC3F0 66A2EB
     }
   }
   * {

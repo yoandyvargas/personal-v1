@@ -19,7 +19,7 @@ const ProjectsContainer = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 10px;
-    padding: 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
     h2 {
     grid-column: 1;
   }

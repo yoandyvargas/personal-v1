@@ -84,9 +84,7 @@ const Hero = () => {
     <HeroContainer>
       <h2>Hello, I'm Yoandy Vargas</h2>
       <h1>I bring <span>ideas</span> to life. 💡</h1>
-      <h3>I'm a creative Front-End Developer with a passion for building and delivering exceptional 
-          digital experiences that are interactive, intuitive, and problem-solving.
-      </h3>
+      <h3>Creative Front-End Developer with an eye for design and a passion for building and delivering pixel-perfect, robust, and accessible user interfaces.</h3>
       <ButtonList>
         <Button href="https://www.github.com/yoandyvargas">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
