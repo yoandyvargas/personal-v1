@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
       --main-text-color: #CFCFCF;
       --secondary-bg-color: #242424;
       --secondary-text-color: black;
-      --accent-color: #6BA2E6; //3CCF91 #9EC3F0 66A2EB
+      --accent-color: #4A8FE7; //3CCF91 #9EC3F0 66A2EB 1C77C3 spanish blue
     }
   }
   * {
