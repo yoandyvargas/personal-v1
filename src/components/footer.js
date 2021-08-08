@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 const StyledFooter = styled.footer`
-  max-width: 960px;
+  max-width: 1080px;
   padding: 4rem 2rem;
   margin: 0 auto;
   display: flex;
@@ -62,7 +62,7 @@ return (
       </p>
     </FooterItem>
     <FooterItem>
-      <p>© 2021</p>
+      <p>© {new Date().getFullYear()}</p>
       <p>Yoandy Vargas</p>
     </FooterItem>
   </StyledFooter>

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const WorkContainer = styled.div`
+const WorkContainer = styled.section`
   max-width: 960px;
   padding: 0 2rem 4rem 2rem;
   margin: 0 auto;
@@ -65,8 +65,6 @@ const Work = () => {
       }
     }
   }
-  
-  
 `)
 
   return (

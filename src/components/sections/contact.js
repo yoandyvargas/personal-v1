@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Button from '../button'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const ContactContainer = styled.div`
+const ContactContainer = styled.section`
   max-width: 760px;
   padding: 0 2rem;
   margin: 0 auto 4rem auto;
