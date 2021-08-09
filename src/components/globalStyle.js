@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
       --accent-bg-color: #202020;
       --main-text-color: #CFCFCF;
       --secondary-text-color: black;
-      --accent-color: #7CA4D5;
+      --accent-color: #21A6FF;
     }
   }
   * {

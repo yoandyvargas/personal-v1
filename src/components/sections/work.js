@@ -19,6 +19,9 @@ const WorkInfo = styled.div`
   margin-bottom: 2rem;
   span {
     color: var(--accent-color);
+    @media screen and (max-width: 642px) {
+      display: block;
+    }
   }
   h3 {
     font-size: 1.25rem;

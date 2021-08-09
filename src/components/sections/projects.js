@@ -6,7 +6,7 @@ const ProjectsContainer = styled.section`
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-gap: 1rem;
   max-width: 960px;
   padding: 0 2rem 4rem 2rem;
   margin: 0 auto;
@@ -18,7 +18,6 @@ const ProjectsContainer = styled.section`
   @media screen and (max-width: 642px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-row-gap: 10px;
     padding: 0rem 1.5rem 1.5rem 1.5rem;
     h2 {
     grid-column: 1;

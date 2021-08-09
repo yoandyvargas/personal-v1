@@ -38,7 +38,7 @@ const PrivacyContainer = styled.div`
     }
   }
   @media screen and (max-width: 642px) {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     margin: 0 auto;
     h1 {
       font-size: 3rem;

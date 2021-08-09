@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import GlobalStyle from './globalStyle'
-import SEO from './seo'
+import Seo from './seo'
 
 const LayoutContainer = styled.section`
   background: var(--main-bg-color);
@@ -16,7 +16,7 @@ const LayoutContainer = styled.section`
 const Layout = ({children}) => {
   return (
     <LayoutContainer>
-      <SEO />
+      <Seo />
         <GlobalStyle />
         <Header />
         {children}
