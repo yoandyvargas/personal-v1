@@ -2,22 +2,21 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    color-scheme: light;
     --main-bg-color: #f7f7f7;
-    --outer-border-color: #0F0F0F;
-    --main-text-color: #303030;
     --secondary-bg-color: #ededed;
+    --accent-bg-color: #e6e6e6;
+    --main-text-color: #303030;
     --secondary-text-color: white;
-    --accent-color: #15529E; //#1D73DD 1476B2 1E77E2
+    --accent-color: #13498B;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --main-bg-color: #121212;
-      --outer-border-color: #FCFCFC;
-      --main-text-color: #CFCFCF;
       --secondary-bg-color: #242424;
+      --accent-bg-color: #202020;
+      --main-text-color: #CFCFCF;
       --secondary-text-color: black;
-      --accent-color: #4A8FE7; //3CCF91 #9EC3F0 66A2EB 1C77C3 spanish blue
+      --accent-color: #7CA4D5;
     }
   }
   * {

@@ -12,7 +12,7 @@ const StyledButton = styled.a`
   font-weight: 600;
   min-width: 105px;
   text-decoration: none;
-  background: var(--secondary-bg-color);
+  background: var(--accent-bg-color);
   color: var(--main-text-color);
   border: solid 1px var(--main-bg-color);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);

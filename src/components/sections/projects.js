@@ -27,13 +27,15 @@ const ProjectsContainer = styled.section`
 `
 
 const ProjectCard = styled.div`
-  cursor: pointer;
+  //cursor: pointer;
   padding: 2rem 1rem;
+  background: var(--accent-bg-color);
+  border-radius: 15px;
   border: solid 1px var(--main-bg-color);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
     border: solid 1px var(--accent-color);
-    border-radius: 15px;
+    background: none;
   }
   p {
     line-height: 1.5;
@@ -44,7 +46,7 @@ const ProjectCard = styled.div`
     flex-wrap: wrap;
     p {
       margin-right: 0.25rem;
-      opacity: 0.7;
+      opacity: 0.8;
       font-weight: 400;
     }
   }
