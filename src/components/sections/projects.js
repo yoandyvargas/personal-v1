@@ -7,9 +7,7 @@ const ProjectsContainer = styled.section`
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  max-width: 960px;
-  padding: 0 2rem 4rem 2rem;
-  margin: 0 auto;
+  margin: 0 auto 4rem 0;
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;

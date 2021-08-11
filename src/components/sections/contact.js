@@ -4,11 +4,6 @@ import Button from '../button'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const ContactContainer = styled.section`
-  max-width: 760px;
-  padding: 0 2rem;
-  margin: 0 auto 4rem auto;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   h2 {
     font-size: 3.5rem;

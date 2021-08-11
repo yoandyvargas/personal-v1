@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import Button from '../button'
 
 const HeroContainer = styled.section`
-  max-width: 960px;
-  padding: 4rem 2rem;
-  margin: 0 auto;
+  margin: 4rem 0;
   animation: fadeIn 1.5s, slideUp 1s;
   &::after {
     display: block;
@@ -18,29 +16,23 @@ const HeroContainer = styled.section`
   }
   h1 {
     font-size: 4rem;
+    margin-bottom: 0.25rem;
   }
   h2 {
-    font-size: 1.5rem;
-    
-  }
-  h3 {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.5;
-    max-width: 85%;
-  }
-  p {
-    line-height: 1.5;
+    font-size: 1.25rem;
+    max-width: 80%;
+    margin-bottom: 0.25rem;
   }
   span {
     color: var(--accent-color);
-    
   }
   @media screen and (max-width: 642px) {
-    padding: 1.5rem;
     h1 {
       font-size: 2.5rem;
     }
-    h3 {
+    h2 {
       max-width: 100%;
     }
   }
@@ -85,7 +77,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <h1>Hello, I'm <span>Yoandy</span>.</h1>
-      <h3>I'm a creative Front-End Developer with an eye for design and a passion for building and delivering pixel-perfect, robust, and accessible user interfaces.</h3>
+      <h2>I'm a creative Front-End Developer with an eye for design and a passion for building and delivering pixel-perfect, robust, and accessible user interfaces.</h2>
       <ButtonList>
         <Button href="https://www.github.com/yoandyvargas">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

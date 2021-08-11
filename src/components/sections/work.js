@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const WorkContainer = styled.section`
-  max-width: 960px;
-  padding: 0 2rem 4rem 2rem;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;

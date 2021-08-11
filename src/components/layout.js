@@ -5,13 +5,18 @@ import Footer from './footer'
 import GlobalStyle from './globalStyle'
 import Seo from './seo'
 
-const LayoutContainer = styled.section`
+const LayoutContainer = styled.div`
   background: var(--main-bg-color);
-  @media screen and (max-width: 642px) {
-    padding: 0.5rem;
-  }
 `
 
+const ContentViewport = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media screen and (max-width: 642px) {
+    padding: 0 1rem;
+  }
+`
 
 const Layout = ({children}) => {
   return (
@@ -19,7 +24,9 @@ const Layout = ({children}) => {
       <Seo />
         <GlobalStyle />
         <Header />
-        {children}
+        <ContentViewport>
+          {children}
+        </ContentViewport>
         <Footer />
     </LayoutContainer>
   )
