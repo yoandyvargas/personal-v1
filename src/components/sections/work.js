@@ -9,6 +9,9 @@ const WorkContainer = styled.section`
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+  @media screen and (max-width: 642px) {
+    margin: 2rem auto 4rem auto;
+  }
 `
 
 const WorkInfo = styled.div`

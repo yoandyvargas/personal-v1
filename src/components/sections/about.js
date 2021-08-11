@@ -21,6 +21,9 @@ const AboutContainer = styled.section`
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 642px) {
+    margin: 4rem 0 2rem 0;
+  }
 `
 
 const TechButton = styled.div`

@@ -20,12 +20,25 @@ const ContentViewport = styled.main`
 `
 
 const ScrollTopButton = styled.div`
-  height: 32px;
-  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
   position: fixed;
   bottom: 2rem;
   right: 1rem;
-  background: red;
+  background: var(--accent-color);
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.2);
+    background: none;
+    border: solid 1px var(--accent-color);
+  }
 `
 
 const Layout = ({children}) => {
@@ -33,7 +46,7 @@ const Layout = ({children}) => {
   return (
     <LayoutContainer>  
         <AnchorLink to='/#header'>
-          <ScrollTopButton/>
+          <ScrollTopButton>👆🏻</ScrollTopButton>
         </AnchorLink>  
       <Seo />
         <GlobalStyle />

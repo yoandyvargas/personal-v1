@@ -29,6 +29,7 @@ const HeroContainer = styled.section`
     color: var(--accent-color);
   }
   @media screen and (max-width: 642px) {
+    margin: 4rem 0;
     h1 {
       font-size: 2.5rem;
     }

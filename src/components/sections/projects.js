@@ -14,6 +14,7 @@ const ProjectsContainer = styled.section`
     grid-column: 1 / span 2;
   }
   @media screen and (max-width: 642px) {
+    margin: 4rem 0;
     grid-template-columns: auto;
     h2 {
     grid-column: 1;
