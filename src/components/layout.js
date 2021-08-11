@@ -18,9 +18,19 @@ const ContentViewport = styled.main`
   }
 `
 
+const ScrollTopButton = styled.div`
+  height: 32px;
+  width: 32px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: red;
+`
+
 const Layout = ({children}) => {
   return (
     <LayoutContainer>
+      <ScrollTopButton />
       <Seo />
         <GlobalStyle />
         <Header />

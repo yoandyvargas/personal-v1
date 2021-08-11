@@ -55,7 +55,7 @@ const Nav = styled.nav`
         position: relative;
       }
     }
-    li:nth-child(3) {
+    li:nth-child(4) {
       margin-right: 0;
     }
     .active {
@@ -89,8 +89,10 @@ const Header = () => {
       </Link>
       <Nav>
         <ul>
-          <li><Link to='/' activeClassName='active'>Home</Link></li>
-          <li><Link to='/about' activeClassName='active'>About</Link></li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/'>About</Link></li>
+          <li><Link to='/'>Projects</Link></li>
+          <li><Link to='/'>Contact</Link></li>
         </ul>
       </Nav>
     </StyledHeader>

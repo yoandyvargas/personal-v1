@@ -15,7 +15,7 @@ const AboutContainer = styled.section`
     color: var(--accent-color);
     text-transform: uppercase;
   }
-  .about__tech {
+  .about__tech, .about__fun {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,13 +28,13 @@ const TechButton = styled.div`
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: bold;
-  margin: 0.25rem;
+  margin: 0.25rem; 
 `
   
 
 const About = () => {
 
-  const techArray = ['JavaScript ES6+', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Adobe XD']
+  const techArray = ['JavaScript ES6+', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Sass']
 
   return (
     <AboutContainer>
