@@ -31,7 +31,7 @@ const HeroContainer = styled.section`
   @media screen and (max-width: 642px) {
     margin: 4rem 0;
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     h2 {
       max-width: 100%;
