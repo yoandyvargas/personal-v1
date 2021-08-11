@@ -18,7 +18,6 @@ const StyledButton = styled.a`
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
       border: solid 1px var(--accent-color);
-      box-shadow: none;
       background: none;
       svg {
         fill: var(--main-text-color);

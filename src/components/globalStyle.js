@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     width: 100%;
     height: 100%;
+    background: var(--main-bg-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
