@@ -6,7 +6,8 @@ const ProjectsContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  margin: 0 auto 4rem 0;
+  margin: 8rem 0;
+  animation: fadeIn 2s;
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;

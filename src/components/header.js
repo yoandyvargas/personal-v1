@@ -56,7 +56,7 @@ const Nav = styled.nav`
         position: relative;
       }
     }
-    li:nth-child(4) {
+    li:nth-child(5) {
       margin-right: 0;
     }
     .active {
@@ -90,10 +90,10 @@ const Header = () => {
       </Link>
       <Nav>
         <ul>
-          <li><AnchorLink to='/#header'stripHash>Home</AnchorLink></li>
-          <li><AnchorLink to='/#about'stripHash>About</AnchorLink></li>
-          <li><AnchorLink to='/#projects'stripHash>Projects</AnchorLink></li>
-          <li><AnchorLink to='/#contact'stripHash>Contact</AnchorLink></li>
+          <li><AnchorLink to='/#header'>Home</AnchorLink></li>
+          <li><AnchorLink to='/#about'>About</AnchorLink></li>
+          <li><AnchorLink to='/#projects'>Projects</AnchorLink></li>
+          <li><AnchorLink to='/#contact'>Contact</AnchorLink></li>
         </ul>
       </Nav>
     </StyledHeader>

@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const AboutContainer = styled.section`
-  margin: 4rem 0;
+  margin: 8rem 0 4rem 0;
+  animation: fadeIn 2s;  
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -34,7 +35,7 @@ const TechButton = styled.div`
 
 const About = () => {
 
-  const techArray = ['JavaScript ES6+', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Sass']
+  const techArray = ['JavaScript', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Sass', 'Netlify']
 
   return (
     <AboutContainer id='about'>
@@ -43,7 +44,7 @@ const About = () => {
       <p>A few years later, I would receive my B.A. in Digital Media - Web Design from the University of Central Florida while specializing in web-focused software engineering, design principles, human-computer interaction, and UX research.</p>
       <p>Here are some technologies I'm currently working with:</p>
       <div className='about__tech'>
-        {techArray.map((item) => <TechButton>{item}</TechButton>)}
+        {techArray.map((item) => <TechButton key={item}>{item}</TechButton>)}
       </div>
     </AboutContainer>
   )

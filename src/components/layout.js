@@ -23,15 +23,16 @@ const ScrollTopButton = styled.div`
   height: 32px;
   width: 32px;
   position: fixed;
-  bottom: 1rem;
+  bottom: 2rem;
   right: 1rem;
   background: red;
 `
 
 const Layout = ({children}) => {
+
   return (
     <LayoutContainer>  
-        <AnchorLink to='/#header' stripHash>
+        <AnchorLink to='/#header'>
           <ScrollTopButton/>
         </AnchorLink>  
       <Seo />

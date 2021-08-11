@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const WorkContainer = styled.section`
-  margin: 0 auto 4rem auto;
+  margin: 4rem auto 8rem auto;
+  animation: fadeIn 2s;
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;

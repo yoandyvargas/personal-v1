@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import Button from '../button'
 
 const HeroContainer = styled.section`
-  margin: 4rem 0;
-  animation: fadeIn 1.5s, slideUp 1s;
+  margin: 8rem 0;
+  animation: fadeIn 1.5s, slideUp 1s;  
   &::after {
     display: block;
     content: '';
@@ -15,7 +15,7 @@ const HeroContainer = styled.section`
     margin-top: 2rem;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 0.25rem;
   }
   h2 {

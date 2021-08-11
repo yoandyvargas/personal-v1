@@ -5,7 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const ContactContainer = styled.section`
   text-align: center;
-  margin: 4rem 0;
+  margin: 8rem 0;
+  animation: fadeIn 2s;
   h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;

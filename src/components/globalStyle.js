@@ -43,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: var(----main-text-color)
     }
+    
 `
 
 export default GlobalStyle;
