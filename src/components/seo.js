@@ -16,7 +16,7 @@ const Seo = ({title, description, keywords, url}) => {
         const metaKeywords = keywords || ["Yoandy Vargas", "Front-End Developer", "UI Developer", "Designer"]
         return (
           <Helmet
-            title={title}
+            title={metaTitle}
             meta={[
               {
                 name: `description`,
@@ -53,7 +53,7 @@ const Seo = ({title, description, keywords, url}) => {
               {
                 name: `twitter: description`,
                 content: metaDescription,
-              }
+              },
             ].concat(
               metaKeywords && metaKeywords.length > 0 ? {
                 name: `keywords`,

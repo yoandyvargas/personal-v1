@@ -25,5 +25,12 @@ module.exports = {
       }
     },
     "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Yoandy Vargas",
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
+      },
+    },
   ],
 };
