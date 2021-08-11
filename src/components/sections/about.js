@@ -1,85 +1,54 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutContainer = styled.section`
-  max-width: 960px;
-  padding: 0 2rem 4rem 2rem;
-  margin: 0 auto;
-  min-height: 100vh;
-  h1 {
-    font-size: 4rem;
+  margin: 8rem 0 4rem 0;
+  animation: fadeIn 2s;  
+  h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
-    &::after {
-      display: block;
-      content: '';
-      background: var(--main-text-color);
-      opacity: 0.125;
-      width: 100%;
-      height: 2px;
-      margin-top: 0rem;
-    }
   }
-  span {
-      color: var(--accent-color);
-  }
-  p, li {
-    font-size: 1.25rem;
+  p {
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
-  li::before {
-      display: inline-block;
-      content: '';
-      width: 10px;
-      height: 10px;
-      border: solid 1px var(--accent-color);
-      border-radius: 50%;
-      margin-right: 0.5rem;
-      @media screen and (max-width: 642px) {
-        width: 8px;
-        height: 8px;
-      }
-    }
-  ul {
-    display: grid;
-    grid-template: auto auto / auto auto auto;
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0;
+  span {
+    color: var(--accent-color);
+    text-transform: uppercase;
+  }
+  .about__tech, .about__fun {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   @media screen and (max-width: 642px) {
-    padding: 1.5rem;
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  .about__other {
-    span {
-      color: #59289B;
-      font-weight: bold;
-      background: white;
-
-    }
+    margin: 4rem 0 2rem 0;
   }
 `
 
+const TechButton = styled.div`
+  background: var(--accent-bg-color);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 0.25rem; 
+`
+  
+
 const About = () => {
 
+  const techArray = ['JavaScript', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Sass', 'Netlify']
+
   return (
-    <AboutContainer>
-      <h1>About Me</h1>
-      <p>I'm Yoandy <span>(YO-AHN-DEE)</span> Vargas, a front-end web developer with an eye for design based in Orlando, FL. I have been creating on the web for the last 4 years.</p>
-      <br/><p>I graduated with a Bachelor of Arts in Digital Media from the University of Central Florida – where I could focus on my passion for design and technology by studying design principles, human-computer interaction, user experience research, and web-focused software engineering.</p>
-      <br/><p>Here are a few technologies I've been working with recently:</p>
-      <ul>
-        <li>JavaScript (ES6+)</li>
-        <li>React</li>
-        <li>Gatsby</li>
-        <li>GraphQL</li>
-        <li>Stylus</li>
-        <li>Sass</li>
-      </ul>
+    <AboutContainer id='about'>
+      <h2>About Me</h2>
+      <p>Hey there, my name is Yoandy <span>(yo-ahn-dee)</span>, and I enjoy all things design and technology. I have always loved building and learning the inner workings of things ever since I got my first PC in 1998 – but it wasn't until 2017 that I would discover my passion for coding and the web. I participated in a coding educational session at work and I absolutely fell in ❤️.</p>
+      <p>A few years later, I would receive my B.A. in Digital Media - Web Design from the University of Central Florida while specializing in web-focused software engineering, design principles, human-computer interaction, and UX research.</p>
+      <p>Here are some technologies I'm currently working with:</p>
+      <div className='about__tech'>
+        {techArray.map((item) => <TechButton key={item}>{item}</TechButton>)}
+      </div>
     </AboutContainer>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const StyledHeader = styled.header`
   max-width: 1080px;
@@ -55,7 +56,7 @@ const Nav = styled.nav`
         position: relative;
       }
     }
-    li:nth-child(3) {
+    li:nth-child(5) {
       margin-right: 0;
     }
     .active {
@@ -76,7 +77,7 @@ const Nav = styled.nav`
 const Header = () => {
 
   return (
-    <StyledHeader>
+    <StyledHeader id='header'>
       <Link to="/">
         <StaticImage 
           width={50}
@@ -84,13 +85,15 @@ const Header = () => {
           placeholder='blurred'
           objectPosition='center top'
           src="../images/portrait.jpeg"
-          alt="Portrait photo of me" 
+          alt="Portrait photo of myself" 
         />
       </Link>
       <Nav>
         <ul>
-          <li><Link to='/' activeClassName='active'>Home</Link></li>
-          <li><Link to='/about' activeClassName='active'>About</Link></li>
+          <li><AnchorLink to='/#header'>Home</AnchorLink></li>
+          <li><AnchorLink to='/#about'>About</AnchorLink></li>
+          <li><AnchorLink to='/#projects'>Projects</AnchorLink></li>
+          <li><AnchorLink to='/#contact'>Contact</AnchorLink></li>
         </ul>
       </Nav>
     </StyledHeader>

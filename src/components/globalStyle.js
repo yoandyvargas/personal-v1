@@ -37,13 +37,13 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   body {
-    margin: 0 auto;
     color: var(--main-text-color);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
   a {
     color: var(----main-text-color)
     }
+    
 `
 
 export default GlobalStyle;

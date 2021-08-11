@@ -4,12 +4,9 @@ import Button from '../button'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const ContactContainer = styled.section`
-  max-width: 760px;
-  padding: 0 2rem;
-  margin: 0 auto 4rem auto;
-  display: flex;
-  flex-direction: column;
   text-align: center;
+  margin: 8rem 0;
+  animation: fadeIn 2s;
   h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
@@ -58,8 +55,8 @@ const Contact = () => {
 `)
 
   return (
-    <ContactContainer>
-      <h2>Say Hello.</h2>
+    <ContactContainer id='contact'>
+      <h2>Say Hello</h2>
       <p>I'm currently open for work. Let's chat.</p>
       <div>
         <Button href="https://www.linkedin.com/in/yoandyvargas/">

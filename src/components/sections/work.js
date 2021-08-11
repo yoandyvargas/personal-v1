@@ -3,15 +3,14 @@ import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const WorkContainer = styled.section`
-  max-width: 960px;
-  padding: 0 2rem 4rem 2rem;
-  margin: 0 auto;
+  margin: 4rem auto 8rem auto;
+  animation: fadeIn 2s;
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   @media screen and (max-width: 642px) {
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    margin: 2rem auto 4rem auto;
   }
 `
 
