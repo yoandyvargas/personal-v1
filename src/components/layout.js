@@ -52,16 +52,17 @@ const Layout = ({children}) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+  };
   }, [])
 
   return (
     <LayoutContainer>
-      { scrollPosition > 250 ? 
-      (<AnchorLink to='/#header'>
-          <ScrollTopButton>👆🏻</ScrollTopButton>
-      </AnchorLink>)
-        : (null)
-      }
+        <AnchorLink to='/#header'>
+            { scrollPosition > 250 ? (<ScrollTopButton>👆🏻</ScrollTopButton>) : null}
+        </AnchorLink>
       <Seo />
         <GlobalStyle />
         <Header />
