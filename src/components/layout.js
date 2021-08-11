@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Header from './header'
@@ -43,11 +43,25 @@ const ScrollTopButton = styled.div`
 
 const Layout = ({children}) => {
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  
+  const handleScroll = () => {
+    const currentPosition = window.pageYOffset;
+    setScrollPosition(currentPosition);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [])
+
   return (
-    <LayoutContainer>  
-        <AnchorLink to='/#header'>
+    <LayoutContainer>
+      { scrollPosition > 250 ? 
+      (<AnchorLink to='/#header'>
           <ScrollTopButton>👆🏻</ScrollTopButton>
-        </AnchorLink>  
+      </AnchorLink>)
+        : (null)
+      }
       <Seo />
         <GlobalStyle />
         <Header />
