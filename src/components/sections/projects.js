@@ -110,7 +110,7 @@ const Projects = () => {
 `)
 
 return (
-  <ProjectsContainer>
+  <ProjectsContainer id='projects'>
     <h2>Projects</h2>
     {projects.allMdx.nodes.map((node) => (
       <ProjectCard key={node.id}>

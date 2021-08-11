@@ -54,7 +54,7 @@ const Contact = () => {
 `)
 
   return (
-    <ContactContainer>
+    <ContactContainer id='contact'>
       <h2>Say Hello</h2>
       <p>I'm currently open for work. Let's chat.</p>
       <div>

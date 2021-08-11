@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Header from './header'
 import Footer from './footer'
 import GlobalStyle from './globalStyle'
@@ -29,8 +30,10 @@ const ScrollTopButton = styled.div`
 
 const Layout = ({children}) => {
   return (
-    <LayoutContainer>
-      <ScrollTopButton />
+    <LayoutContainer>  
+        <AnchorLink to='/#header' stripHash>
+          <ScrollTopButton/>
+        </AnchorLink>  
       <Seo />
         <GlobalStyle />
         <Header />

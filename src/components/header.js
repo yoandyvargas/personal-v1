@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const StyledHeader = styled.header`
   max-width: 1080px;
@@ -76,7 +77,7 @@ const Nav = styled.nav`
 const Header = () => {
 
   return (
-    <StyledHeader>
+    <StyledHeader id='header'>
       <Link to="/">
         <StaticImage 
           width={50}
@@ -89,10 +90,10 @@ const Header = () => {
       </Link>
       <Nav>
         <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/'>About</Link></li>
-          <li><Link to='/'>Projects</Link></li>
-          <li><Link to='/'>Contact</Link></li>
+          <li><AnchorLink to='/#header'stripHash>Home</AnchorLink></li>
+          <li><AnchorLink to='/#about'stripHash>About</AnchorLink></li>
+          <li><AnchorLink to='/#projects'stripHash>Projects</AnchorLink></li>
+          <li><AnchorLink to='/#contact'stripHash>Contact</AnchorLink></li>
         </ul>
       </Nav>
     </StyledHeader>

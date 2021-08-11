@@ -37,7 +37,7 @@ const About = () => {
   const techArray = ['JavaScript ES6+', 'React', 'Gatsby', 'GraphQL', 'Stylus', 'Sass']
 
   return (
-    <AboutContainer>
+    <AboutContainer id='about'>
       <h2>About Me</h2>
       <p>Hey there, my name is Yoandy <span>(yo-ahn-dee)</span>, and I enjoy all things design and technology. I have always loved building and learning the inner workings of things ever since I got my first PC in 1998 – but it wasn't until 2017 that I would discover my passion for coding and the web. I participated in a coding educational session at work and I absolutely fell in ❤️.</p>
       <p>A few years later, I would receive my B.A. in Digital Media - Web Design from the University of Central Florida while specializing in web-focused software engineering, design principles, human-computer interaction, and UX research.</p>
