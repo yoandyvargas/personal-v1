@@ -76,7 +76,7 @@ const Hero = () => {
 
   return (
     <HeroContainer>
-      <h1>Hello, I'm <span>Yoandy</span>.</h1>
+      <h1>Hello, I'm <span>Yoandy</span></h1>
       <h2>I'm a creative Front-End Developer with an eye for design and a passion for building and delivering pixel-perfect, robust, and accessible user interfaces.</h2>
       <ButtonList>
         <Button href="https://www.github.com/yoandyvargas">

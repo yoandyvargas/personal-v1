@@ -9,12 +9,12 @@ const LayoutContainer = styled.div`
   background: var(--main-bg-color);
 `
 
-const ContentViewport = styled.div`
+const ContentViewport = styled.main`
   max-width: 960px;
   margin: 0 auto;
   padding: 0 2rem;
   @media screen and (max-width: 642px) {
-    padding: 0 1rem;
+    padding: 0 1.25rem;
   }
 `
 

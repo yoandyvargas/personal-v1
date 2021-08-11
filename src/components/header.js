@@ -84,7 +84,7 @@ const Header = () => {
           placeholder='blurred'
           objectPosition='center top'
           src="../images/portrait.jpeg"
-          alt="Portrait photo of me" 
+          alt="Portrait photo of myself" 
         />
       </Link>
       <Nav>

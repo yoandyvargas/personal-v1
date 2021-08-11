@@ -8,9 +8,6 @@ const WorkContainer = styled.section`
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  @media screen and (max-width: 642px) {
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
-  }
 `
 
 const WorkInfo = styled.div`

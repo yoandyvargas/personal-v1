@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const ProjectsContainer = styled.section`
   display: grid;
-  justify-content: space-between;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   margin: 0 auto 4rem 0;
@@ -14,9 +13,7 @@ const ProjectsContainer = styled.section`
     grid-column: 1 / span 2;
   }
   @media screen and (max-width: 642px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    grid-template-columns: auto;
     h2 {
     grid-column: 1;
   }
@@ -24,8 +21,7 @@ const ProjectsContainer = styled.section`
 `
 
 const ProjectCard = styled.div`
-  //cursor: pointer;
-  padding: 2rem 1rem;
+  padding: 2rem;
   background: var(--accent-bg-color);
   border-radius: 15px;
   border: solid 1px var(--main-bg-color);
@@ -102,7 +98,6 @@ const Projects = () => {
       nodes {
         frontmatter {
           description
-          example
           github
           name
           production
@@ -116,7 +111,7 @@ const Projects = () => {
 
 return (
   <ProjectsContainer>
-    <h2>Recent Projects</h2>
+    <h2>Projects</h2>
     {projects.allMdx.nodes.map((node) => (
       <ProjectCard key={node.id}>
         <ProjectInfo>

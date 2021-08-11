@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const ContactContainer = styled.section`
   text-align: center;
+  margin: 4rem 0;
   h2 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
@@ -54,7 +55,7 @@ const Contact = () => {
 
   return (
     <ContactContainer>
-      <h2>Say Hello.</h2>
+      <h2>Say Hello</h2>
       <p>I'm currently open for work. Let's chat.</p>
       <div>
         <Button href="https://www.linkedin.com/in/yoandyvargas/">
