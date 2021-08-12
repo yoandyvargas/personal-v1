@@ -58,7 +58,9 @@ const Layout = ({children}) => {
   };
   }, [])
 
-  window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+  useEffect(() => {
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+  }, [])
 
   return (
     <LayoutContainer>
