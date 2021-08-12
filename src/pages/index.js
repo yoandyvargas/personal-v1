@@ -8,8 +8,6 @@ import About from '../components/sections/about'
 
 const IndexPage = () => {
 
-  window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
-
   return (
     <Layout>
       <Hero />
