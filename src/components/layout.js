@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import Header from './header'
-import Footer from './footer'
-import GlobalStyle from './globalStyle'
-import Seo from './seo'
+import { Header, Footer, Seo, GlobalStyle} from '../components'
 
 const LayoutContainer = styled.div`
   background: var(--main-bg-color);
