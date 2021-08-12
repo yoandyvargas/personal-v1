@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
@@ -75,11 +75,13 @@ const Nav = styled.nav`
 `
 
 const Header = () => {
+
+  useEffect(() => {
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+  }, [])
   
   //Tracks all nav clicks as custom plausible events
   const trackClick = (linkString) => {
-    //Received a window.plausible function does not exist error – includingin layout did not seem to resolve here. this is a short term solution 
-    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
     window.plausible(linkString);
   }
 
