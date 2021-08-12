@@ -8,6 +8,12 @@ import About from '../components/sections/about'
 
 const IndexPage = () => {
 
+  const isBrowser = typeof window !== "undefined"
+
+  if (isBrowser) {
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+  }
+
   return (
     <Layout>
       <Hero />
