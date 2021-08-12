@@ -41,6 +41,12 @@ const ScrollTopButton = styled.div`
   }
 `
 
+const isBrowser = typeof window !== "undefined"
+
+if (isBrowser) {
+  window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+}
+
 const Layout = ({children}) => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
