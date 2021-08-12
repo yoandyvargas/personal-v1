@@ -74,11 +74,13 @@ const Nav = styled.nav`
 }
 `
 
+const isBrowser = typeof window !== "undefined";
+
 const Header = () => {
   
   //Tracks all nav clicks as custom plausible events
   const trackClick = (linkString) => {
-    window.plausible(linkString);
+    if(isBrowser) {window.plausible(linkString);}
   }
 
   return (

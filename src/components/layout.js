@@ -41,7 +41,7 @@ const ScrollTopButton = styled.div`
   }
 `
 
-const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined";
 
 const Layout = ({children}) => {
 
