@@ -74,15 +74,8 @@ const Nav = styled.nav`
 }
 `
 
-const isBrowser = typeof window !== "undefined";
-
 const Header = () => {
   
-  //Tracks all nav clicks as custom plausible events
-  const trackClick = (linkString) => {
-    if(isBrowser) {window.plausible(linkString);}
-  }
-
   return (
     <StyledHeader id='header'>
       <Link to="/">
@@ -97,10 +90,10 @@ const Header = () => {
       </Link>
       <Nav>
         <ul>
-          <li><AnchorLink to='/#header' onAnchorLinkClick={trackClick('Home')}>Home</AnchorLink></li>
-          <li><AnchorLink to='/#about' onAnchorLinkClick={trackClick('About')}>About</AnchorLink></li>
-          <li><AnchorLink to='/#projects' onAnchorLinkClick={trackClick('Projects')}>Projects</AnchorLink></li>
-          <li><AnchorLink to='/#contact' onAnchorLinkClick={trackClick('Contact')}>Contact</AnchorLink></li>
+          <li><AnchorLink to='/#header'>Home</AnchorLink></li>
+          <li><AnchorLink to='/#about'>About</AnchorLink></li>
+          <li><AnchorLink to='/#projects'>Projects</AnchorLink></li>
+          <li><AnchorLink to='/#contact'>Contact</AnchorLink></li>
         </ul>
       </Nav>
     </StyledHeader>
