@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const PrivacyContainer = styled.div`
   max-width: 960px;
@@ -14,14 +14,14 @@ const PrivacyContainer = styled.div`
     margin-bottom: 1rem;
     &::after {
       display: block;
-      content: '';
+      content: "";
       background: var(--main-text-color);
       opacity: 0.125;
       width: 100%;
       height: 2px;
       margin-top: 1rem;
-      }
     }
+  }
   p {
     line-height: 1.5;
   }
@@ -47,17 +47,29 @@ const PrivacyContainer = styled.div`
       font-size: 1.5rem;
     }
   }
-`
+`;
 
 const Privacy = () => {
   return (
     <PrivacyContainer>
       <h1>Privacy Policy </h1>
       <h2>Only the necessary stuff.</h2>
-      <p>I value data privacy highly which is why I am using <a href="https://plausible.io/" target="_blank" rel="noopener noreferrer">Plausible Analytics</a> – a GDPR, CCPA, and cookie law-compliant analytics tool. 
-        Plausible is privacy-focused and only collects crucial non-personally identifiable data that helps me to improve this website. 
-      </p><br/>
-      <h3>The following data is being collected:</h3><br/>
+      <p>
+        I value data privacy highly which is why I am using{" "}
+        <a
+          href="https://plausible.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Plausible Analytics
+        </a>{" "}
+        – a GDPR, CCPA, and cookie law-compliant analytics tool. Plausible is
+        privacy-focused and only collects crucial non-personally identifiable
+        data that helps me to improve this website.
+      </p>
+      <br />
+      <h3>The following data is being collected:</h3>
+      <br />
       <ul>
         <li>Page URL</li>
         <li>HTTP Referer</li>
@@ -67,13 +79,29 @@ const Privacy = () => {
         <li>Visitor Country</li>
       </ul>
       <br />
-      <p>Learn more about Plausible's data policy at <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer">https://plausible.io/data-policy</a>.</p>
-      <br/>
-      <h3>Please contact <a href="mailto:yoandy.vargas@icloud.com">Yoandy Vargas</a> If you have any questions or concerns.</h3>
-      <br/>
-      <p><em>Last Updated – August 6th, 2021</em></p>
+      <p>
+        Learn more about Plausible's data policy at{" "}
+        <a
+          href="https://plausible.io/data-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://plausible.io/data-policy
+        </a>
+        .
+      </p>
+      <br />
+      <h3>
+        Please contact{" "}
+        <a href="mailto:yoandy.vargas@icloud.com">Yoandy Vargas</a> If you have
+        any questions or concerns.
+      </h3>
+      <br />
+      <p>
+        <em>Last Updated – August 6th, 2021</em>
+      </p>
     </PrivacyContainer>
-  )
-}
+  );
+};
 
 export default Privacy;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -45,6 +45,6 @@ const GlobalStyle = createGlobalStyle`
     color: var(----main-text-color)
     }
     
-`
+`;
 
 export default GlobalStyle;

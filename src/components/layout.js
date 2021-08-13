@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Header, Footer, Seo, GlobalStyle} from '../components'
+import { Header, Footer, Seo, GlobalStyle } from "../components";
 
 const LayoutContainer = styled.div`
   background: var(--main-bg-color);
-`
+`;
 
 const ContentViewport = styled.main`
   max-width: 960px;
@@ -14,7 +14,7 @@ const ContentViewport = styled.main`
   @media screen and (max-width: 642px) {
     padding: 0 1.25rem;
   }
-`
+`;
 
 const ScrollTopButton = styled.div`
   display: flex;
@@ -36,39 +36,36 @@ const ScrollTopButton = styled.div`
     background: none;
     border: solid 1px var(--accent-color);
   }
-`
+`;
 
-const Layout = ({children}) => {
-
+const Layout = ({ children }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  
+
   const handleScroll = () => {
     const currentPosition = window.pageYOffset;
     setScrollPosition(currentPosition);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-  };
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <LayoutContainer>
-        <AnchorLink to='/#header'>
-            { scrollPosition > 250 ? (<ScrollTopButton>👆🏻</ScrollTopButton>) : null}
-        </AnchorLink>
+      <AnchorLink to="/#header">
+        {scrollPosition > 250 ? <ScrollTopButton>👆🏻</ScrollTopButton> : null}
+      </AnchorLink>
       <Seo />
-        <GlobalStyle />
-        <Header />
-        <ContentViewport>
-          {children}
-        </ContentViewport>
-        <Footer />
+      <GlobalStyle />
+      <Header />
+      <ContentViewport>{children}</ContentViewport>
+      <Footer />
     </LayoutContainer>
-  )
-}
+  );
+};
 
 export default Layout;

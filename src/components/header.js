@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
+import React from "react";
+import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const StyledHeader = styled.header`
@@ -24,7 +24,7 @@ const StyledHeader = styled.header`
   @media screen and (max-width: 642px) {
     padding: 2rem 1.5rem 0rem 1.5rem;
   }
-`
+`;
 
 const Nav = styled.nav`
   display: flex;
@@ -38,11 +38,12 @@ const Nav = styled.nav`
       position: relative;
       &:hover::after {
         display: block;
-        content: '';
+        content: "";
         position: absolute;
         background: var(--accent-color);
         height: 3px;
-        animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+        animation: left-to-right 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 1
+          forwards;
       }
       span {
         color: var(--accent-color);
@@ -63,41 +64,48 @@ const Nav = styled.nav`
       color: var(--accent-color);
     }
   }
-  
-@keyframes left-to-right {
-  0% {
-    width: 0%;
+
+  @keyframes left-to-right {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
   }
-  100% {
-    width: 100%;
-  }
-}
-`
+`;
 
 const Header = () => {
-  
   return (
-    <StyledHeader id='header'>
+    <StyledHeader id="header">
       <Link to="/">
-        <StaticImage 
+        <StaticImage
           width={50}
           height={50}
-          placeholder='blurred'
-          objectPosition='center top'
+          placeholder="blurred"
+          objectPosition="center top"
           src="../images/portrait.jpeg"
-          alt="Portrait photo of myself" 
+          alt="Portrait photo of myself"
         />
       </Link>
       <Nav>
         <ul>
-          <li><AnchorLink to='/#header'>Home</AnchorLink></li>
-          <li><AnchorLink to='/#about'>About</AnchorLink></li>
-          <li><AnchorLink to='/#projects'>Projects</AnchorLink></li>
-          <li><AnchorLink to='/#contact'>Contact</AnchorLink></li>
+          <li>
+            <AnchorLink to="/#header">Home</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="/#about">About</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="/#projects">Projects</AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="/#contact">Contact</AnchorLink>
+          </li>
         </ul>
       </Nav>
     </StyledHeader>
-  )
-}
+  );
+};
 
 export default Header;

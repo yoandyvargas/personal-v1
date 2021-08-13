@@ -1,19 +1,25 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql, StaticQuery } from "gatsby"
+import React from "react";
+import { Helmet } from "react-helmet";
+import { graphql, StaticQuery } from "gatsby";
 
 // Gatsby JS: Create a SEO React Component - https://www.youtube.com/watch?v=Y2gweJCaHz0
 
-const Seo = ({title, description, keywords, url}) => {
+const Seo = ({ title, description, keywords, url }) => {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
-        const metaTitle = title || data.site.siteMetadata.title
-        const metaDescription = description || data.site.siteMetadata.description
-        const metaAuthor = data.site.siteMetadata.author
-        const metaUrl = url || data.site.siteMetadata.url
-        const metaKeywords = keywords || ["Yoandy Vargas", "Front-End Developer", "UI Developer", "Designer"]
+      render={(data) => {
+        const metaTitle = title || data.site.siteMetadata.title;
+        const metaDescription =
+          description || data.site.siteMetadata.description;
+        const metaAuthor = data.site.siteMetadata.author;
+        const metaUrl = url || data.site.siteMetadata.url;
+        const metaKeywords = keywords || [
+          "Yoandy Vargas",
+          "Front-End Developer",
+          "UI Developer",
+          "Designer",
+        ];
         return (
           <Helmet
             title={metaTitle}
@@ -55,18 +61,19 @@ const Seo = ({title, description, keywords, url}) => {
                 content: metaDescription,
               },
             ].concat(
-              metaKeywords && metaKeywords.length > 0 ? {
-                name: `keywords`,
-                content: metaKeywords.join(', ')
-              } : []
-            )
-          }
+              metaKeywords && metaKeywords.length > 0
+                ? {
+                    name: `keywords`,
+                    content: metaKeywords.join(", "),
+                  }
+                : []
+            )}
           />
-        )
+        );
       }}
-      />
-  )
-}
+    />
+  );
+};
 
 export default Seo;
 
@@ -79,4 +86,4 @@ const detailsQuery = graphql`
       }
     }
   }
-`
+`;

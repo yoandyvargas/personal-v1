@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const StyledFooter = styled.footer`
   max-width: 1080px;
@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   position: relative;
   &::before {
     display: block;
-    content: '';
+    content: "";
     position: absolute;
     background: var(--main-text-color);
     opacity: 0.125;
@@ -25,13 +25,14 @@ const StyledFooter = styled.footer`
     padding: 4rem 1.5rem 2rem 1.5rem;
     flex-wrap: wrap;
   }
-`
+`;
 
 const FooterItem = styled.div`
   display: grid;
   grid-template: auto auto / auto;
   justify-content: center;
-  p, a {
+  p,
+  a {
     margin-right: 0.25rem;
     opacity: 0.8;
   }
@@ -45,28 +46,41 @@ const FooterItem = styled.div`
     margin-top: 0.5rem;
     place-items: center;
   }
-`
-
+`;
 
 const Footer = () => {
-return (
-  <StyledFooter>
-    <FooterItem>
-      <p>Legal</p>
-      <Link to="/privacy">Privacy Policy</Link>
-    </FooterItem>
-    <FooterItem>
-      <p>Contact</p>
-      <p>
-        <a href="https://github.com/yoandyvargas" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/yoandyvargas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-    </FooterItem>
-    <FooterItem>
-      <p>© {new Date().getFullYear()}</p>
-      <p>Yoandy Vargas</p>
-    </FooterItem>
-  </StyledFooter>
-)
-}
+  return (
+    <StyledFooter>
+      <FooterItem>
+        <p>Legal</p>
+        <Link to="/privacy">Privacy Policy</Link>
+      </FooterItem>
+      <FooterItem>
+        <p>Contact</p>
+        <p>
+          <a
+            href="https://github.com/yoandyvargas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://www.linkedin.com/in/yoandyvargas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
+      </FooterItem>
+      <FooterItem>
+        <p>© {new Date().getFullYear()}</p>
+        <p>Yoandy Vargas</p>
+      </FooterItem>
+    </StyledFooter>
+  );
+};
 
 export default Footer;

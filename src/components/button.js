@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const StyledButton = styled.a`
   display: flex;
@@ -16,13 +16,13 @@ const StyledButton = styled.a`
   color: var(--main-text-color);
   border: solid 1px var(--main-bg-color);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    &:hover {
-      border: solid 1px var(--accent-color);
-      background: none;
-      svg {
-        fill: var(--main-text-color);
-      }
+  &:hover {
+    border: solid 1px var(--accent-color);
+    background: none;
+    svg {
+      fill: var(--main-text-color);
     }
+  }
   svg {
     width: 16px;
     height: 16px;
@@ -30,14 +30,14 @@ const StyledButton = styled.a`
     fill: var(--accent-color);
     transition: fill 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
-`
+`;
 
-const Button = ({children, href}) => {
+const Button = ({ children, href }) => {
   return (
     <StyledButton href={href} target="_blank" rel="noopener noreferrer">
       {children}
     </StyledButton>
-  )
-}
+  );
+};
 
 export default Button;
