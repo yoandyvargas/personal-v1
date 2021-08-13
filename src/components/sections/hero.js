@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../button";
-import GhIcon from "../icons/github";
-import LinkedinIcon from "../icons/linkedin";
-import EmailIcon from "../icons/email";
+import { Button, GhIcon, LinkedinIcon, EmailIcon } from "../index";
 
 const HeroContainer = styled.section`
   margin: 8rem 0;

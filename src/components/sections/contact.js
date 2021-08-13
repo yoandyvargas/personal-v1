@@ -56,6 +56,7 @@ const Contact = () => {
     }
   `);
 
+  //Gatsby dev has window object, but at build with Node it does not - checks for object and resolves build issues
   const isBrowser = typeof window !== "undefined";
 
   if (isBrowser) {
