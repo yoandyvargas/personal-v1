@@ -1,8 +1,7 @@
-import React from "react"
-import { Hero, Work, Projects, Contact, About, Layout } from "../components"
+import React from "react";
+import { Hero, Work, Projects, Contact, About, Layout } from "../components";
 
 const IndexPage = () => {
-
   return (
     <Layout>
       <Hero />
@@ -11,7 +10,7 @@ const IndexPage = () => {
       <Projects />
       <Contact />
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
