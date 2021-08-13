@@ -40,6 +40,7 @@ const ProjectCard = styled.div`
   .tech {
     display: flex;
     flex-wrap: wrap;
+    background: red;
     p {
       margin-right: 0.25rem;
       opacity: 0.8;

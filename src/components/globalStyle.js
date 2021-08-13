@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --accent-bg-color: #e6e6e6;
     --main-text-color: #303030;
     --secondary-text-color: white;
-    --accent-color: #13498B;
+    --accent-color: #0050B2;
   }
   @media (prefers-color-scheme: dark) {
     :root {
