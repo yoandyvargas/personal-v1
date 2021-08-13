@@ -100,9 +100,13 @@ const ProjectInfo = styled.div`
 const Projects = () => {
   const projects = useStaticQuery(graphql`
     query {
-      allMdx(filter: { frontmatter: { type: { eq: "projects" } } }) {
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { type: { eq: "projects" } } }
+      ) {
         nodes {
           frontmatter {
+            date
             description
             github
             name
