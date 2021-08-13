@@ -24,6 +24,9 @@ const ProjectsContainer = styled.section`
 `;
 
 const ProjectCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem;
   background: var(--accent-bg-color);
   border-radius: 15px;
@@ -35,12 +38,11 @@ const ProjectCard = styled.div`
   }
   p {
     line-height: 1.5;
-    margin-top: 0.25rem;
+    margin: 0.25rem 0;
   }
   .tech {
     display: flex;
     flex-wrap: wrap;
-    background: red;
     p {
       margin-right: 0.25rem;
       opacity: 0.8;
@@ -68,6 +70,9 @@ const ProjectInfo = styled.div`
     width: 100%;
     height: 2px;
     bottom: 0;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
   .gh {
     svg {

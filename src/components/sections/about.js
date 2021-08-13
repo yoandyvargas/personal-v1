@@ -51,11 +51,11 @@ const About = () => {
     <AboutContainer id="about">
       <h2>About Me</h2>
       <p>
-        Hey there, my name is Yoandy <span>(yo-ahn-dee)</span>, and I enjoy all
+        Hey there, my name is Yoandy <span>(yoh-ahn-dee)</span>, and I enjoy all
         things design and technology. I have always loved building and learning
         the inner workings of things ever since I got my first PC in 1998 – but
         it wasn't until 2017 that I would discover my passion for programming
-        and web development thanks to a coding education session at work. I
+        and web development thanks to a coding education session at Apple. I
         absolutely ❤️'d it.
       </p>
       <p>
