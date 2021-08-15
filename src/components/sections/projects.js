@@ -26,12 +26,12 @@ const ProjectsContainer = styled.section`
 const ProjectCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 2rem;
   background: var(--accent-bg-color);
   border-radius: 15px;
   border: solid 1px var(--main-bg-color);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  min-height: 238px;
   &:hover {
     border: solid 1px var(--accent-color);
     background: none;
@@ -43,6 +43,7 @@ const ProjectCard = styled.div`
   .tech {
     display: flex;
     flex-wrap: wrap;
+    margin-top: auto;
     p {
       margin-right: 0.25rem;
       opacity: 0.8;
@@ -51,6 +52,9 @@ const ProjectCard = styled.div`
   }
   h3 {
     font-size: 1.75rem;
+  }
+  @media screen and (max-width: 642px) {
+    min-height: 0;
   }
 `;
 
