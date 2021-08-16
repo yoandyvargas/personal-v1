@@ -13,7 +13,7 @@
 
 ## My Thoughts 💡
 
-Personal-v1 is my first hands-on experience with Gatsby, and it was a ton of fun to build. The entire project took about 16 hours of building and reading documentation. Additionally, I referenced a few video tutorials for some components – their links are in the component comments.
+Personal-v1 is my first hands-on experience with Gatsby, and it was a ton of fun to build. The entire project took about 24 hours of building and reading documentation. Additionally, I referenced a few video tutorials for some components – their links are in the component comments.
 
 Notable features:
 * Minimalist aesthetic
