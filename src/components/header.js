@@ -83,7 +83,7 @@ const Header = () => {
           width={50}
           height={50}
           placeholder="blurred"
-          objectPosition="center top"
+          objectPosition="center center"
           src="../images/portrait.jpeg"
           alt="Portrait photo of myself"
         />
