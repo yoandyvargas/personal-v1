@@ -16,9 +16,9 @@ const StyledHeader = styled.header`
     cursor: pointer;
     border-radius: 50%;
     border: solid 0.5px var(--outer-border-color);
-    filter: opacity(0.9);
+    filter: grayscale(0.4);
     &:hover {
-      filter: opacity(1);
+      filter: grayscale(0);
     }
   }
   @media screen and (max-width: 642px) {
