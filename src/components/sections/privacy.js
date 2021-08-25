@@ -72,7 +72,7 @@ const Privacy = () => {
       <br />
       <ul>
         <li>Page URL</li>
-        <li>HTTP Referer</li>
+        <li>HTTP Referrer</li>
         <li>Browser</li>
         <li>Operating system</li>
         <li>Device type</li>
