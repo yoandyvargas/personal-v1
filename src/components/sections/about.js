@@ -55,8 +55,7 @@ const About = () => {
         things design and technology. I have always loved building and learning
         the inner workings of things ever since I got my first PC in 1998 – but
         it wasn't until 2017 that I would discover my passion for programming
-        and web development thanks to a coding education session at Apple. I
-        absolutely ❤️'d it.
+        and web development thanks to a coding education session at Apple.
       </p>
       <p>
         A few years later, I would receive my B.A. in Digital Media - Web Design
