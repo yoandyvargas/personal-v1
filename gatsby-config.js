@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Yoandy Vargas | Front-End Developer",
-    description: "Yoandy Vargas, a creative Front-End Developer with an eye for design and with a passion for building and delivering exceptional digital experiences that are interactive, intuitive, and problem-solving.",
-    url: 'https://yoandyvargas.com',
+    title: "Yoandy Vargas | Front-End Engineer",
+    description:
+      "Yoandy Vargas, a creative Front-End Engineer with an eye for design and with a passion for building and delivering exceptional digital experiences that are interactive, intuitive, and problem-solving.",
+    url: "https://yoandyvargas.com",
     twitterUsername: "@yoahndee",
   },
   plugins: [
@@ -23,7 +24,7 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/content/`,
-      }
+      },
     },
     "gatsby-plugin-mdx",
     {

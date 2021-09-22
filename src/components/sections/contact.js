@@ -57,6 +57,7 @@ const Contact = () => {
   `);
 
   //Gatsby dev has window object, but at build with Node it does not - checks for object and resolves build issues
+  /* Disabling resume tracking and resume button all together
   const isBrowser = typeof window !== "undefined";
 
   if (isBrowser) {
@@ -73,10 +74,24 @@ const Contact = () => {
     console.log("Thanks for taking a look at my resume!");
   };
 
+
+        <div role="button" className="clickTracker" onClick={resumeView}>
+          <Button href={data.allFile.edges[0].node.publicURL}>
+            <ResumeIcon />
+            Resume
+          </Button>
+        </div>
+
+
+  */
+
   return (
     <ContactContainer id="contact">
       <h2>Say Hello</h2>
-      <p>I'm currently open for work. Let's chat.</p>
+      <p>
+        My inbox is always open if you have any questions or just want to say
+        hi.
+      </p>
       <div>
         <Button href="https://www.linkedin.com/in/yoandyvargas/">
           <LinkedinIcon />
@@ -86,12 +101,6 @@ const Contact = () => {
           <EmailIcon />
           Email
         </Button>
-        <div role="button" className="clickTracker" onClick={resumeView}>
-          <Button href={data.allFile.edges[0].node.publicURL}>
-            <ResumeIcon />
-            Resume
-          </Button>
-        </div>
       </div>
     </ContactContainer>
   );

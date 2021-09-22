@@ -16,9 +16,8 @@ const Seo = ({ title, description, keywords, url }) => {
         const metaUrl = url || data.site.siteMetadata.url;
         const metaKeywords = keywords || [
           "Yoandy Vargas",
-          "Front-End Developer",
-          "UI Developer",
-          "Designer",
+          "Front-End Engineer",
+          "UI Engineer",
         ];
         return (
           <Helmet
