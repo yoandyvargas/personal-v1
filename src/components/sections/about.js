@@ -58,10 +58,8 @@ const About = () => {
         and web development thanks to a coding education session at Apple.
       </p>
       <p>
-        A few years later, I would receive my B.A. in Digital Media - Web Design
-        from the University of Central Florida while specializing in web-focused
-        software engineering, design principles, human-computer interaction, and
-        UX research.
+        Today, I build pixel-perfect, robust, and accessible user interfaces at
+        SightPlan.
       </p>
       <p>Here are some technologies I'm currently working with:</p>
       <div className="about__tech">
