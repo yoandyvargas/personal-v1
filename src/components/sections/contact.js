@@ -12,6 +12,10 @@ const ContactContainer = styled.section`
     margin-bottom: 1rem;
     color: var(--accent-color);
   }
+  p {
+    max-width: 30ch;
+    margin: 0 auto;
+  }
   .clickTracker {
     margin: 0;
     a {
@@ -75,12 +79,12 @@ const Contact = () => {
   };
 
 
-        <div role="button" className="clickTracker" onClick={resumeView}>
-          <Button href={data.allFile.edges[0].node.publicURL}>
-            <ResumeIcon />
-            Resume
-          </Button>
-        </div>
+  <div role="button" className="clickTracker" onClick={resumeView}>
+    <Button href={data.allFile.edges[0].node.publicURL}>
+      <ResumeIcon />
+      Resume
+    </Button>
+  </div>
 
 
   */
