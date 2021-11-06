@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Yoandy Vargas | Front-End Engineer",
+    title: "Yoandy Vargas | Software Engineer",
     description:
-      "Yoandy Vargas, a creative Front-End Engineer with an eye for design and with a passion for building and delivering exceptional digital experiences that are interactive, intuitive, and problem-solving.",
+      "Yoandy Vargas, a software engineer specializing in building pixel-perfect, robust, and accessible user interfaces. Currently developing excellent product experiences at SightPlan",
     url: "https://yoandyvargas.com",
     twitterUsername: "@yoahndee",
   },

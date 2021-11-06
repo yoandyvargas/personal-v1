@@ -32,7 +32,7 @@ const HeroContainer = styled.section`
       font-weight: bold;
       padding: 0.25rem;
       box-sizing: border-box;
-      border-bottom: solid 4px #FFBC42;
+      border-bottom: solid 3px #FFBC42;
       transition: all 0.5s;
       &:hover {
         background: #FFBC42;
