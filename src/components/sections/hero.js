@@ -27,6 +27,21 @@ const HeroContainer = styled.section`
   }
   span {
     color: var(--accent-color);
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.25rem;
+      box-sizing: border-box;
+      border-bottom: solid 4px #FFBC42;
+      transition: all 0.5s;
+      &:hover {
+        background: #FFBC42;
+        transition: all 0.5s;
+        color: black;
+        border-radius: 4px;
+        border: none;
+      }
+    }
   }
   @media screen and (max-width: 642px) {
     margin: 4rem 0;
@@ -80,9 +95,7 @@ const Hero = () => {
         Hello, I'm <span>Yoandy</span>
       </h1>
       <h2>
-        I'm a creative Front-End Engineer with an eye for design and a passion
-        for building and delivering pixel-perfect, robust, and accessible user
-        interfaces.
+      I'm a software engineer specializing in building pixel-perfect, robust, and accessible user interfaces. Currently, I'm developing excellent product experiences at <span><a href="">SightPlan</a></span>.
       </h2>
       <ButtonList>
         <Button href="https://www.github.com/yoandyvargas">

@@ -38,12 +38,12 @@ const TechButton = styled.div`
 
 const About = () => {
   const techArray = [
-    "JavaScript",
+    "Ember",
+    "Handlebars",
+    "TypeScript",
     "React",
     "Gatsby",
-    "GraphQL",
-    "Stylus",
-    "Sass",
+    "Cordova",
     "Netlify",
   ];
 
@@ -57,10 +57,7 @@ const About = () => {
         it wasn't until 2017 that I would discover my passion for programming
         and web development thanks to a coding education session at Apple.
       </p>
-      <p>
-        Today, I build pixel-perfect, robust, and accessible user interfaces at
-        SightPlan.
-      </p>
+
       <p>Here are some technologies I'm currently working with:</p>
       <div className="about__tech">
         {techArray.map((item) => (

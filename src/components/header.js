@@ -97,9 +97,6 @@ const Header = () => {
             <AnchorLink to="/#about">About</AnchorLink>
           </li>
           <li>
-            <AnchorLink to="/#projects">Projects</AnchorLink>
-          </li>
-          <li>
             <AnchorLink to="/#contact">Contact</AnchorLink>
           </li>
         </ul>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Work, Projects, Contact, About, Layout } from "../components";
+import { Hero, Work, Contact, About, Layout } from "../components";
 
 const IndexPage = () => {
   return (
@@ -7,7 +7,6 @@ const IndexPage = () => {
       <Hero />
       <About />
       <Work />
-      <Projects />
       <Contact />
     </Layout>
   );
