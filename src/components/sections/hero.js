@@ -95,7 +95,7 @@ const Hero = () => {
         Hello, I'm <span>Yoandy</span>
       </h1>
       <h2>
-      I'm a software engineer specializing in building pixel-perfect, robust, and accessible user interfaces. Currently, I'm developing excellent product experiences at <span><a href="">SightPlan</a></span>.
+      I'm a software engineer specializing in building pixel-perfect, robust, and accessible user interfaces. Currently, I'm developing excellent product experiences at <span><a href="https://www.sightplan.com" target="_blank" rel="noopener noreferrer">SightPlan</a></span>.
       </h2>
       <ButtonList>
         <Button href="https://www.github.com/yoandyvargas">
