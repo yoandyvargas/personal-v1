@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Personal-v1</h1>
-  <p>The iteration of my personal website <a href="https://yoandyvargas.com" target="_blank">yoandyvargas.com</a></p>
+  <p>The first iteration of my personal website <a href="https://yoandyvargas.com" target="_blank">yoandyvargas.com</a></p>
 </div>
 <div align="center">
   <a href="https://app.netlify.com/sites/lexicon-eng/deploys" target="_blank">
